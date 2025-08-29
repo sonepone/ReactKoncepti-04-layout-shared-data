@@ -16,6 +16,7 @@ const router = createBrowserRouter([
         path: '/posts',
         id: 'posts',
         element: <PostsLayout />,
+        errorElement: <PostsLayout />,
         loader: postsLoader,
         children: [
           { index: true, element: <Posts /> },
